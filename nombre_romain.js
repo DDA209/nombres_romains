@@ -2,10 +2,6 @@ function parseToRoman(num) {
 
     let result = '';
 
-    if (num === 0) {
-        return 'Zéro';
-    }
-
     let equivalences = ['I', 'V', 'X', 'L', 'C', 'D', 'M'];
 
     const arrStrNum = num.toString().split('').reverse();
@@ -67,12 +63,9 @@ function getLogical(digit, cond) {
         result = [0, digit , 0, 0];
     }
 
-
     // console.log('getLogical type digit', typeof digit, '- getLogical', result);
-    return result
+    return result;
 }
-
-
 
 let nums = [
     1,
@@ -93,7 +86,7 @@ let nums = [
     9999,
     10001,
     44444,
-]
+];
 
 nums.forEach(element => {
     console.log (element, ' = ', parseToRoman(element));    
