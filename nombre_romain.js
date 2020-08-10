@@ -67,27 +67,8 @@ function getLogical(digit, cond) {
     return result;
 }
 
-let nums = [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    0,
-    37,
-    143,
-    1234,
-    2020,
-    9999,
-    10001,
-    44444,
-];
+let nums = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0, 37, 143, 1234, 2020, 9999, 10001, 44444,];
 
-nums.forEach(element => {
+nums.forEach (element => {
     console.log (element, ' = ', parseToRoman(element));    
 });
